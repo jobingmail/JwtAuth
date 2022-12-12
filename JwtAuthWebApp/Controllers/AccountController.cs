@@ -31,6 +31,7 @@ namespace JwtAuthAPI.Controllers
         
         public ActionResult Register()
         {
+            int i = 0;
             return View();
         }
 
