@@ -43,7 +43,7 @@ namespace JwtAuthAPI.Controllers
                 client.BaseAddress = new Uri(_configuration["Settings:BaseUrl"]);
                 client.DefaultRequestHeaders.Clear();
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                HttpResponseMessage Res = await client.PostAsJsonAsync("api/Account/Register", userDto);
+                HttpResponseMessage Res = await client.PostAsJsonAsync("api/Authenticate/Register", userDto);
 
                 if (Res.IsSuccessStatusCode)
                 {
