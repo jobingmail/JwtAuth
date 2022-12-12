@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace JwtAuthAPI.BL
+namespace JwtAuthAPI.DTO
 {
     public class LoginDTO
     {
